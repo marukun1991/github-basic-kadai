@@ -1,1 +1,45 @@
+C:\Users\admin>mkdir git_challenge
 
+C:\Users\admin>cd git_challenge
+
+C:\Users\admin\git_challenge>git init
+Initialized empty Git repository in C:/Users/admin/git_challenge/.git/
+
+C:\Users\admin\git_challenge>echo "Hello, world!" >> hello_world.txt
+
+C:\Users\admin\git_challenge>dir
+ ドライブ C のボリューム ラベルがありません。
+ ボリューム シリアル番号は 3435-6EF2 です
+
+ C:\Users\admin\git_challenge のディレクトリ
+
+2025/02/20  19:09    <DIR>          .
+2025/02/20  19:07    <DIR>          ..
+2025/02/20  19:09                18 hello_world.txt
+               1 個のファイル                  18 バイト
+               2 個のディレクトリ  148,145,537,024 バイトの空き領域
+
+C:\Users\admin\git_challenge>git add hello_world.txt
+
+C:\Users\admin\git_challenge>git commit -m "hello_world.txtを追加"
+[main (root-commit) 2b15d10] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+C:\Users\admin\git_challenge>echo "こんにちは、世界！" >> hello_world.txt
+
+C:\Users\admin\git_challenge>sir
+'sir' は、内部コマンドまたは外部コマンド、
+操作可能なプログラムまたはバッチ ファイルとして認識されていません。
+
+C:\Users\admin\git_challenge>git add hello_world.txt
+
+C:\Users\admin\git_challenge>git commit -m "日本語訳を追記"
+[main cce967f] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+C:\Users\admin\git_challenge>git log --oneline
+cce967f (HEAD -> main) 日本語訳を追記
+2b15d10 hello_world.txtを追加
+
+C:\Users\admin\git_challenge>
